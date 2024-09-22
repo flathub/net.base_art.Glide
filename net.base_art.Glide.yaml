@@ -1,6 +1,6 @@
 app-id: net.base_art.Glide
 runtime: org.gnome.Platform
-runtime-version: '46'
+runtime-version: '47'
 sdk: org.gnome.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.rust-stable
@@ -78,7 +78,7 @@ modules:
     sources:
       - type: git
         url: https://gitlab.freedesktop.org/gstreamer/gstreamer
-        tag: 1.24.6
+        tag: 1.24.8
         disable-submodules: true
     config-opts:
       - -Ddoc=disabled
