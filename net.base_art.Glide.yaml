@@ -77,7 +77,7 @@ modules:
     buildsystem: meson
     sources:
       - type: git
-        url: https://gitlab.freedesktop.org/gstreamer/gstreamer
+        url: https://github.com/gstreamer/gstreamer
         tag: 1.26.0
         disable-submodules: true
     config-opts:
