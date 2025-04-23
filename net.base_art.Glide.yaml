@@ -77,9 +77,11 @@ modules:
     buildsystem: meson
     sources:
       - type: git
-        url: https://github.com/gstreamer/gstreamer
-        tag: 1.26.0
+        url: https://gitlab.freedesktop.org/gstreamer/gstreamer
+        tag: 1.24.12
         disable-submodules: true
+      - type: patch
+        path: 0001-Revert-video-overlay-composition-Declare-the-video-s.patch
     config-opts:
       - -Ddoc=disabled
       - -Dtests=disabled
