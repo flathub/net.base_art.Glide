@@ -58,17 +58,6 @@ modules:
       - -Dgst-plugins-bad:gpl=enabled
       - -Dgst-plugins-bad:openh264=disabled
 
-  - name: gtuber
-    buildsystem: meson
-    sources:
-      - type: git
-        url: https://github.com/Rafostar/gtuber.git
-        commit: 468bf02a8adcf69b1bd6dd7b5dbcdcc0bfdb6922
-    config-opts:
-      - -Dintrospection=disabled
-      - -Dvapi=disabled
-      - -Dgst-gtuber=enabled
-
   - name: glide
     buildsystem: meson
     sources:
