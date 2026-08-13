@@ -62,8 +62,8 @@ modules:
     buildsystem: meson
     sources:
       - type: archive
-        url: https://github.com/philn/glide/releases/download/0.6.7/glide-0.6.7.tar.xz
-        sha256: 58596a508b40618a6cde683cc7697259142272ce08d18b3b0f85c9dc8a588754
+        url: https://github.com/philn/glide/releases/download/0.6.8/glide-0.6.8.tar.xz
+        sha256: aeb430bf4238622e8772b5b1d363190ba73cf1e61b6b17c844714a75183da980
         x-checker-data:
           type: json
           url: https://api.github.com/repos/philn/glide/releases/latest
