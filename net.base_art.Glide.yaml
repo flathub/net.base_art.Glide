@@ -1,6 +1,6 @@
 app-id: net.base_art.Glide
 runtime: org.gnome.Platform
-runtime-version: '50'
+runtime-version: '51'
 sdk: org.gnome.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.rust-stable
@@ -31,29 +31,6 @@ modules:
         commands:
           - autoreconf -fiv
         dest-filename: autogen.sh
-
-  - name: gstreamer
-    builddir: true
-    buildsystem: meson
-    sources:
-      - type: git
-        url: https://gitlab.freedesktop.org/gstreamer/gstreamer
-        tag: 1.26.11
-        disable-submodules: true
-    config-opts:
-      - -Ddoc=disabled
-      - -Dtests=disabled
-      - -Ddevtools=disabled
-      - -Dges=disabled
-      - -Dlibav=disabled
-      - -Drtsp_server=disabled
-      - -Dgst-examples=disabled
-      - -Dpython=disabled
-      - -Dwebrtc=disabled
-      - -Dgpl=enabled
-      - -Dgst-plugins-ugly:gpl=enabled
-      - -Dgst-plugins-bad:gpl=enabled
-      - -Dgst-plugins-bad:openh264=disabled
 
   - name: glide
     buildsystem: meson
